@@ -1,5 +1,6 @@
 const container = document.querySelector('.items');
 const cubes = document.querySelectorAll('.cube');
+
 let selectedCube = null;
 let offsetX = 0;
 let offsetY = 0;
@@ -18,17 +19,16 @@ document.addEventListener('mousemove', (e) => {
   if (!selectedCube) return;
 
   const containerRect = container.getBoundingClientRect();
-  const cubeRect = selectedCube.getBoundingClientRect();
 
   let x = e.clientX - containerRect.left - offsetX;
   let y = e.clientY - containerRect.top - offsetY;
 
-  // Boundary constraints
+  // Constrain to container
   x = Math.max(0, Math.min(container.clientWidth - selectedCube.offsetWidth, x));
   y = Math.max(0, Math.min(container.clientHeight - selectedCube.offsetHeight, y));
 
-  selectedCube.style.left = x + 'px';
-  selectedCube.style.top = y + 'px';
+  selectedCube.style.left = `${x}px`;
+  selectedCube.style.top = `${y}px`;
 });
 
 document.addEventListener('mouseup', () => {

@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   display: flex;
@@ -13,11 +16,6 @@ body {
   background: #ffffff;
   border: 2px solid #000;
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 10px;
-  box-sizing: border-box;
 }
 
 .cube {
@@ -29,8 +27,8 @@ body {
   border-radius: 8px;
 }
 
-/* Optional: initial placement */
-.items .cube:nth-child(1) { top: 10px; left: 10px; }
-.items .cube:nth-child(2) { top: 10px; left: 100px; }
-.items .cube:nth-child(3) { top: 100px; left: 10px; }
-.items .cube:nth-child(4) { top: 100px; left: 100px; }
+/* Initial positions */
+.cube:nth-child(1) { top: 10px; left: 10px; }
+.cube:nth-child(2) { top: 10px; left: 100px; }
+.cube:nth-child(3) { top: 100px; left: 10px; }
+.cube:nth-child(4) { top: 100px; left: 100px; }
