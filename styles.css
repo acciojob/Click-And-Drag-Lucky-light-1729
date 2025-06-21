@@ -30,7 +30,7 @@ body {
 }
 
 /* Optional: initial placement */
-.container .cube:nth-child(1) { top: 10px; left: 10px; }
-.container .cube:nth-child(2) { top: 10px; left: 100px; }
-.container .cube:nth-child(3) { top: 100px; left: 10px; }
-.container .cube:nth-child(4) { top: 100px; left: 100px; }
+.items .cube:nth-child(1) { top: 10px; left: 10px; }
+.items .cube:nth-child(2) { top: 10px; left: 100px; }
+.items .cube:nth-child(3) { top: 100px; left: 10px; }
+.items .cube:nth-child(4) { top: 100px; left: 100px; }
